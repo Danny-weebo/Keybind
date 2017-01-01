@@ -13,11 +13,36 @@ make sure you include the keybind.js file
 <link rel="/dist/stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
 ```
 
-| 
+| Function name | Arg expected | Arg returned | Description   |
+| ------------- | ------------ | ------------ | ------------- |
+| setKey | String | - | Set a new bind key to existing object.
+| setTime | Number(Int) | - | Set a new time (Seconds) to existing object.
+| enableDraw | Boolean | - | Enable draw functionality.
+| disableDraw | Boolean | - | Disable draw functionality.
+| setElID | String | - | Attach the keybind on a different Element.
+| setDeg | Number(Int) | - | Set new degree.
+| setInitialColor | String | - | Set new Initial Color.
+| setFillColor | String | - | Set new Fill Color.
+| enableDev | Boolean | - | Enable dev mode.
+| disableDev | Boolean | - | Disable dev mode.
+| setOnCompleteFunction | Function | - | Set new on complete function.
+| ------------- | ------------- | ------------- | ------------- |
+| getKey | - | String | returns the current set key.
+| getTime | - | Number(Seconds) | returns the current set time.
+| isDrawEnabled | - | Boolean | returns true if draw is enabled.
+| getElementId | - | String | returns the element ID.
+| getDeg | - | Number(Int) | returns the degree.
+| getInitialColor | - | String | returns the initial color.
+| fillColor | - | String | returns the fill color.
+| isDev | - | Boolean | returns true if dev is enabled.
+| getOnCompleteFunction | - | Function | returns the function that will be called on complete.
+
+
+
 
 # Options
 
-| Arg  | Value expected | Initial value | Description 
+| Option  | Arg expected | Initial value | Description 
 | ------------- | ------------- | ------------- | ------------- |
 | key | keydown's object key | " " | The key that you want to attach, the key is selected by the keydown's key element |
 | time | number(Int) | 2 | The number of **seconds** for the keypress |
@@ -48,6 +73,9 @@ var myObj = new Keybind({
 ```
 
 ## Example of using the Keybind's methods
+```Javascript
+
+```
 
 # TODO
 - [x] Vanilla javascript plugin

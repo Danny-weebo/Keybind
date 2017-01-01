@@ -206,9 +206,6 @@ Keybind.prototype.getDeg = function() {
 Keybind.prototype.getInitialColor = function() {
     return this.options.draw.initialColor;
 };
-Keybind.prototype.getInitialColor = function() {
-    return this.options.draw.initialColor;
-};
 Keybind.prototype.fillColor = function() {
     return this.options.draw.fillColor;
 };
