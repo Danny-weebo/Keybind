@@ -3,6 +3,13 @@
 call a function upon a set time of key press with optional "duration" animation on the element.
 
 # Documentation
+
+make sure you include the keybind.js file
+```HTML
+<script src="keybind.js"></script>
+<link rel="stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
+```
+
 | Arg  | Value expected | Initial value | Description 
 | ------------- | ------------- | ------------- | ------------- |
 | key | keydown's object key | " " | The key that you want to attach, the key is selected by the keydown's key element |
