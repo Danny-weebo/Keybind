@@ -1,4 +1,4 @@
-# Keybind Repository
+# Keybind Repository - jQuery edition
 
 call a function upon a set time of key press with optional "duration" animation on the element.
 
