@@ -13,6 +13,10 @@ make sure you include the keybind.js file
 <link rel="/dist/stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
 ```
 
+| 
+
+# Options
+
 | Arg  | Value expected | Initial value | Description 
 | ------------- | ------------- | ------------- | ------------- |
 | key | keydown's object key | " " | The key that you want to attach, the key is selected by the keydown's key element |
@@ -27,7 +31,7 @@ make sure you include the keybind.js file
 | onComplete | Function | function() { console.log('Fire ball!'); } | The function that will be called after pressing enough as set |
 
 # Example
-## Example of simple use of on a button element
+## Example of creating Keybind object 
 ```Javascript
 var myObj = new Keybind({
     time: 2,
@@ -42,6 +46,8 @@ var myObj = new Keybind({
     }
 });
 ```
+
+## Example of using the Keybind's methods
 
 # TODO
 - [x] Vanilla javascript plugin

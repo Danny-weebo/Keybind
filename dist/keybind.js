@@ -44,8 +44,8 @@ function Keybind(options) {
             initialColor: options.draw.initialColor || defaults.draw.initialColor,
             fillColor: options.draw.fillColor       || defaults.draw.fillColor
         },
-        dev: options.dev        || defaults.dev,
-        onComplete: options.onComplete || defaults.onComplete
+        dev: options.dev                || defaults.dev,
+        onComplete: options.onComplete  || defaults.onComplete
     };
 
     // lets keep father obj on self -- so it will be reached everywhere
@@ -144,6 +144,81 @@ function Keybind(options) {
         }
     });
 }
+
+/**
+ * SET VALUES
+ */
+Keybind.prototype.setKey = function(newKey) {
+    this.options.key = newKey;
+};
+Keybind.prototype.setTime = function(newTime) {
+    if(!(isNaN(newTime)))
+        this.options.time = newTime;
+    else
+        console.warn("Warning, setTime wasn't saved as the arg isn't a number, timer value return to default");
+};
+Keybind.prototype.enableDraw = function() {
+    this.options.draw.enabled = true;
+}
+Keybind.prototype.disableDraw = function() {
+    this.options.draw.enabled = false;
+}
+Keybind.prototype.setElID = function(newElID) {
+    this.options.draw.elID = newElID;
+}
+Keybind.prototype.setDeg = function(newDeg) {
+    this.options.draw.deg = newDeg;
+}
+Keybind.prototype.setInitialColor = function(newInitialColor) {
+    this.options.draw.initialColor = newInitialColor;
+}
+Keybind.prototype.setFillColor = function(newFillColor) {
+    this.options.draw.fillColor = newFillColor;
+}
+Keybind.prototype.enableDev = function() {
+    this.options.dev = true;
+}
+Keybind.prototype.disableDev = function() {
+    this.options.dev = false;
+}
+Keybind.prototype.setOnCompleteFunction = function(newFunction) {
+    this.options.onComplete = newFunction;
+}
+
+/**
+ * GET VALUES
+ */
+Keybind.prototype.getKey = function() {
+    return this.options.key;
+};
+Keybind.prototype.getTime = function() {
+    return this.options.time;
+};
+Keybind.prototype.isDrawEnabled = function() {
+    return this.options.draw.enabled;
+};
+Keybind.prototype.getElementId = function() {
+    return this.options.draw.elID;
+};
+Keybind.prototype.getDeg = function() {
+    return this.options.draw.deg;
+};
+Keybind.prototype.getInitialColor = function() {
+    return this.options.draw.initialColor;
+};
+Keybind.prototype.getInitialColor = function() {
+    return this.options.draw.initialColor;
+};
+Keybind.prototype.fillColor = function() {
+    return this.options.draw.fillColor;
+};
+Keybind.prototype.isDev = function() {
+    return this.options.dev;
+};
+Keybind.prototype.getOnCompleteFunction = function() {
+    return this.options.onComplete();
+}
+
 
 
 /**

@@ -7,7 +7,7 @@
     </head>
 <body>
     <button id="btn">Thats my tester</button>
-
+    <div id="test"></div>
     <script>
         var myObj = new Keybind({
             time: 2,
@@ -20,6 +20,9 @@
                 initialColor: "#fff",
                 fillColor: "#888888"
             }
+        });
+        myObj.setOnCompleteFunction(function() {
+            console.log('Hola Israel');
         });
     </script>
 </body>
