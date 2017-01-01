@@ -5,6 +5,10 @@ call a function upon a set time of key press with optional "duration" animation 
 # Installation
 - `git clone https://github.com/Danny-weebo/Keybind.git`
 
+or using bower
+
+- `bower info keybind`
+
 # Documentation
 
 make sure you include the keybind.js file
@@ -37,9 +41,6 @@ make sure you include the keybind.js file
 | fillColor | - | String | returns the fill color.
 | isDev | - | Boolean | returns true if dev is enabled.
 | getOnCompleteFunction | - | Function | returns the function that will be called on complete.
-
-
-
 
 # Options
 
