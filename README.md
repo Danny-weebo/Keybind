@@ -2,12 +2,16 @@
 
 call a function upon a set time of key press with optional "duration" animation on the element.
 
+# Installation
+- `git clone https://github.com/Danny-weebo/Keybind.git`
+- `cd Keybind`
+
 # Documentation
 
 make sure you include the keybind.js file
 ```HTML
-<script src="keybind.js"></script>
-<link rel="stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
+<script src="/dist/keybind.js"></script>
+<link rel="/dist/stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
 ```
 
 | Arg  | Value expected | Initial value | Description 

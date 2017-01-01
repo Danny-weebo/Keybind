@@ -33,8 +33,20 @@ function Keybind(options) {
         }
     };
 
-    // extending new options
-    this.options = Object.assign({}, defaults, options);
+    // extending values
+    this.options = {
+        key: options.key    || defaults.key,
+        time: options.time  || defaults.time,
+        draw: {
+            enabled: options.draw.enabled           || defaults.draw.enabled,
+            elID: options.draw.elID                 || defaults.draw.enabled,
+            deg: options.draw.deg                   || defaults.draw.deg,
+            initialColor: options.draw.initialColor || defaults.draw.initialColor,
+            fillColor: options.draw.fillColor       || defaults.draw.fillColor
+        },
+        dev: options.dev        || defaults.dev,
+        onComplete: options.onComplete || defaults.onComplete
+    };
 
     // lets keep father obj on self -- so it will be reached everywhere
     var self = this;
