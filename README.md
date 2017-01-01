@@ -75,7 +75,15 @@ var myObj = new Keybind({
 
 ## Example of using the Keybind's methods
 ```Javascript
+// changing the time to 5
+myObj.setTime(5);
+// changing the function that will be called on complete.
+myObj.setOnCompleteFunction(function() {
+    console.log('Even bigger fire ball');
+});
 
+// enabling dev  - to see the time counter.
+myObj.enableDev();
 ```
 
 # TODO
