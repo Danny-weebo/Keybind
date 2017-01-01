@@ -32,8 +32,8 @@ var myObj = new Keybind({
     dev: true,
     draw: {
         enabled: true,
-        elID: 'btn',
-        deg: 270,
+        elID: 'btn', // the element id
+        deg: 0,
         initialColor: "#fff",
         fillColor: "#888888"
     }
