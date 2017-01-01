@@ -4,7 +4,6 @@ call a function upon a set time of key press with optional "duration" animation 
 
 # Installation
 - `git clone https://github.com/Danny-weebo/Keybind.git`
-- `cd Keybind`
 
 # Documentation
 
