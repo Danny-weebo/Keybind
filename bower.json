@@ -1,0 +1,29 @@
+{
+  "name": "keybind",
+  "homepage": "https://github.com/Danny-weebo/Keybind",
+  "authors": [
+    "Danny Braunstein <dannyb9737@gmail.com>"
+  ],
+  "description": "call a function upon a set time of key press",
+  "main": ["dist/keybind.js","dist/keybind.css"],
+  "keywords": [
+    "function",
+    "timer",
+    "keypress",
+    "keybind",
+    "keydown"
+  ],
+  "moduleType": "globals",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danny-weebo/Keybind.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
