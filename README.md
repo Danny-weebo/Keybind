@@ -15,7 +15,7 @@ make sure you include the keybind.js file
 
 | Function name | Arg expected | Arg returned | Description   |
 | ------------- | ------------ | ------------ | ------------- |
-| set methods |
+| **set methods** |
 | setKey | String | - | Set a new bind key to existing object.
 | setTime | Number(Int) | - | Set a new time (Seconds) to existing object.
 | enableDraw | Boolean | - | Enable draw functionality.
@@ -27,7 +27,7 @@ make sure you include the keybind.js file
 | enableDev | Boolean | - | Enable dev mode.
 | disableDev | Boolean | - | Disable dev mode.
 | setOnCompleteFunction | Function | - | Set new on complete function.
-| get methods |
+| **get methods** |
 | getKey | - | String | returns the current set key.
 | getTime | - | Number(Seconds) | returns the current set time.
 | isDrawEnabled | - | Boolean | returns true if draw is enabled.
