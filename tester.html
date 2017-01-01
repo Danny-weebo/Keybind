@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+        <script src="keybind.js"></script>
+        <link rel="stylesheet" href="keybind.css" />
+        <title>keybind test</title>
+    </head>
+<body>
+    <button id="btn">tester</button>
+    <div id="tester"> Hello </div>
+
+    <script>
+        var test = new Keybind({
+            time: 2,
+            key: ' ',
+            dev: true,
+            draw: {
+                enabled: true,
+                elID: 'btn',
+                deg: 270,
+                initialColor: "#fff",
+                fillColor: "#888888"
+            }
+        });
+
+        var test = new Keybind({
+            time: 5,
+            key: ' ',
+            dev: false,
+            draw: {
+                enabled: true,
+                elID: 'tester',
+                deg: 270,
+                initialColor: "#fff",
+                fillColor: "#888888"
+            }
+        });
+    </script>
+</body>
+
+</html>
