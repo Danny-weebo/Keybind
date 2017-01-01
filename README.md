@@ -13,7 +13,7 @@ or using bower
 
 make sure you include the keybind.js file
 ```HTML
-<script src="/dist/keybind.js"></script>
+<script src="/dist/keybind.min.js"></script>
 <link rel="/dist/stylesheet" href="keybind.css" /> <!-- the css file is necessary only incase of the 'dev' option use -->
 ```
 
