@@ -7,30 +7,16 @@
         <title>keybind test</title>
     </head>
 <body>
-    <button id="btn">tester</button>
-    <div id="tester"> Hello </div>
+    <button id="btn">Thats my tester</button>
 
     <script>
-        var test = new Keybind({
+        var myObj = new Keybind({
             time: 2,
             key: ' ',
             dev: true,
             draw: {
                 enabled: true,
                 elID: 'btn',
-                deg: 270,
-                initialColor: "#fff",
-                fillColor: "#888888"
-            }
-        });
-
-        var test = new Keybind({
-            time: 5,
-            key: ' ',
-            dev: false,
-            draw: {
-                enabled: true,
-                elID: 'tester',
                 deg: 270,
                 initialColor: "#fff",
                 fillColor: "#888888"
