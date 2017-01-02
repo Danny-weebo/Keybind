@@ -7,7 +7,7 @@ call a function upon a set time of key press with optional "duration" animation 
 
 or using bower
 
-- `bower info keybind`
+- `bower install keybind`
 
 # Documentation
 
